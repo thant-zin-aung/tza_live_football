@@ -82,7 +82,7 @@
         <div class="overlay"></div>
         <div class="app-info-wrapper">
             <div class="left">
-                <p class="title"><span>THANT ZIN AUNG Live Football</span> - THE FASTEST ONLINE FOOBALL VIEWING CHANNELS</p>
+                <p class="title"><span>THANT ZIN AUNG Live Football</span> - THE FASTEST ONLINE FOOBALL STREAMING CHANNELS</p>
                 <p class="sub-title">Thant Zin Aung Live page: Official website www.tzafootballlive.infinityfreeapp.com to watch live football with the best Myanmar commentary high-speed links.</p>
             </div>
             <div class="right">
