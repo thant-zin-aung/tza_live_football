@@ -1,0 +1,403 @@
+*,html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #151414;
+}
+::-webkit-scrollbar {
+    width: 0.01em;
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    background-color: #151414;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+header .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+.app-info-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.app-info-wrapper .left, .app-info-wrapper .right {
+    height: 100%;
+}
+.app-info-wrapper .left {
+    width: 600px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.app-info-wrapper .left .title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.3em;
+}
+.app-info-wrapper .left .title span {
+    color: yellow;
+}
+.app-info-wrapper .left .sub-title {
+    font-size: 13px;
+    line-height: 1.5em;
+    letter-spacing: 0.07em;
+    opacity: 0.9;
+}
+.app-info-wrapper .right {
+    width: 900px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.app-info-wrapper .right .image {
+    width: 100%;
+    height: 90%;
+    background-image: url('../images/players\ logo3.png');
+    background-size: cover;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    margin-left: 20px;
+}
+
+/* // league section styles..,..................................................................... */
+#league {
+    margin-top: 15px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+#league .top-bar-wrapper {
+    color: white;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+#league .top-bar-wrapper .v-line {
+    width: 5px;
+    min-width: 5px;
+    height: 100%;
+    margin: 0 10px;
+    background-color: yellow;
+}
+#league .top-bar-wrapper .v-line-1 {
+    margin-left: 0px;
+}
+#league .top-bar-wrapper .v-line-2 {
+    width: 1px;
+    min-width: 1px;
+}
+#league .top-bar-wrapper .straight-line {
+    margin: 0 2px;
+    width: 5px;
+    min-width: 5px;
+    height: 100%;
+    background-color: yellow;
+    /* rotate: 10deg; */
+}
+#league .top-bar-wrapper .full-length-line {
+    margin-left: 2px;
+    width: 100%;
+    height: 100%;
+    background-color: yellow; 
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+#league .top-bar-wrapper .full-length-line .play-music-wrapper,
+#league .top-bar-wrapper .full-length-line .api-level
+{
+    width: 100px;
+    min-width: 100px;
+    height: 90%;
+    background-color: black;
+    /* background: linear-gradient(to right , grey , black); */
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin-right: 13px;
+}
+#league .top-bar-wrapper .full-length-line .rotate-line {
+    margin: 0 2px;
+    width: 3px;
+    min-width: 3px;
+    height: 90%;
+    background-color: black;
+    rotate: -10deg;
+}
+#league .top-bar-wrapper .full-length-line .api-level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    margin: 0 13px;
+}
+#league .top-bar-wrapper .full-length-line .intro-text {
+    margin-left: 13px;
+    /* width: 275px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: transparent;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#league .top-bar-wrapper .title-wrapper {
+    /* text-transform: uppercase; */
+    min-width: 273px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#league .top-bar-wrapper .login-info-wrapper {
+    font-size: 13px;
+    margin-right: 20px;
+}
+#league .top-bar-wrapper .login-info-wrapper .account-name {
+    min-width: 88px;
+    /* display: none; */
+}
+#league .top-bar-wrapper .login-info-wrapper .login-button {
+    display: none;
+}
+
+.league-list-wrapper {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.league-wrapper {
+    width: 430px;
+    height: 220px;
+    background-color: #151414;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 1px 1px 8px 5px #0E0E0D;
+    position: relative;
+    margin: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: scale 0.4s,box-shadow 0.4s;
+    user-select: none;
+    overflow: hidden;
+}
+.league-wrapper:hover {
+    scale: 1.17;
+    box-shadow: 1px 1px 8px 5px yellow;
+}
+.league-wrapper .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.9;
+}
+.league-wrapper .info-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.league-wrapper .upper-layer {
+    display: flex;
+    align-items: center;
+}
+.league-wrapper .upper-layer .logo-wrapper {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
+.league-wrapper .upper-layer .name-wrapper {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.league-wrapper .upper-layer .country-wrapper{
+    display: flex;
+    align-items: center;
+}
+.league-wrapper .upper-layer .country-wrapper .text {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-right: 10px;
+}
+.league-wrapper .upper-layer .country-wrapper .flag {
+    width: 23px;
+    height: 14px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.league-wrapper .mid-wrapper {
+    font-size: 12px;
+    font-weight: bold;
+}
+.league-wrapper .mid-wrapper div {
+    margin: 5px 0;
+}
+.league-wrapper .mid-wrapper span {
+    font-weight: lighter;
+}
+
+
+.league-wrapper .bottom-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.league-wrapper .bottom-wrapper .live-wrapper {
+    width: 70px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.league-wrapper .bottom-wrapper .live-wrapper .dot-wrapper {
+    font-size: 8px;
+    margin-right: 5px;
+}
+.league-wrapper .bottom-wrapper .live-wrapper .text-wrapper {
+    font-size: 11px;
+    letter-spacing: 0.03em;
+}
+.league-wrapper .bottom-wrapper .not-started-wrapper {
+    width: 100px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    
+}
+.league-wrapper .bottom-wrapper .explore-button-wrapper {
+    width: 100px;
+    height: 35px;
+    border: 1px solid yellow;
+    background-color: transparent;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: lowercase;
+}
+.league-wrapper .bottom-wrapper .explore-button-wrapper:hover {
+    background-color: yellow !important;
+    color: black;
+}
+
+/* media queries section ................................................................... */
+
+@media only screen and (max-width: 1370px) {
+    header {
+        height: 400px;
+    }
+
+    .app-info-wrapper .left .title {
+        font-size: 30px;
+    }
+
+    .app-info-wrapper .right {
+        width: 700px;
+    }
+
+    #league {
+        margin-top: 15px;
+    }
+    #league .top-bar-wrapper {
+        height: 36px;
+        margin-bottom: 0;
+    }
+
+    #league .top-bar-wrapper .title-wrapper {
+        font-size: 20px;
+        min-width: 220px;
+    }
+    #league .top-bar-wrapper .login-info-wrapper {
+        font-size: 12px;
+    }
+
+    .league-wrapper {
+        width: 380px;
+        height: 195px;
+    }
+
+    .league-wrapper .upper-layer .logo-wrapper {
+        width: 55px;
+        height: 55px;
+        border-radius: 55px;
+    }
+    .league-wrapper .upper-layer .name-wrapper {
+        font-size: 19px;
+    }
+    .league-wrapper .upper-layer .country-wrapper .flag {
+        width: 21px;
+        height: 13px;
+    }
+}

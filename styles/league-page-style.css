@@ -1,0 +1,394 @@
+*,html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #151414;
+}
+::-webkit-scrollbar {
+    width: 0.01em;
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    background-color: #151414;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    position: relative;
+}
+header .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+.league-info-wrapper {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.league-info-wrapper .league-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-position: center;
+    background-size: cover;
+}
+.league-info-wrapper .title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.3em;
+    margin: 30px 0;
+}
+.league-info-wrapper .title span {
+    color: yellow;
+}
+.league-info-wrapper .sub-title {
+    width: 700px;
+    font-size: 13px;
+    line-height: 1.5em;
+    letter-spacing: 0.07em;
+    opacity: 0.9;
+    text-align: center;
+}
+
+/* // match section styles..,..................................................................... */
+
+#matches {
+    margin-top: 15px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+#matches .top-bar-wrapper {
+    color: white;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#matches .top-bar-wrapper .v-line {
+    width: 5px;
+    min-width: 5px;
+    height: 100%;
+    margin: 0 10px;
+    background-color: yellow;
+}
+#matches .top-bar-wrapper .v-line-1 {
+    margin-left: 0px;
+}
+#matches .top-bar-wrapper .v-line-2 {
+    width: 1px;
+    min-width: 1px;
+}
+#matches .top-bar-wrapper .straight-line {
+    margin: 0 2px;
+    width: 5px;
+    min-width: 5px;
+    height: 100%;
+    background-color: yellow;
+    /* rotate: 10deg; */
+}
+#matches .top-bar-wrapper .full-length-line {
+    margin-left: 2px;
+    width: 100%;
+    height: 100%;
+    background-color: yellow; 
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+#matches .top-bar-wrapper .full-length-line .play-music-wrapper,
+#matches .top-bar-wrapper .full-length-line .api-level
+{
+    width: 100px;
+    min-width: 100px;
+    height: 90%;
+    background-color: black;
+    /* background: linear-gradient(to right , grey , black); */
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin-right: 13px;
+}
+#matches .top-bar-wrapper .full-length-line .rotate-line {
+    margin: 0 2px;
+    width: 3px;
+    min-width: 3px;
+    height: 90%;
+    background-color: black;
+    rotate: -10deg;
+}
+#matches .top-bar-wrapper .full-length-line .api-level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    margin: 0 13px;
+}
+#matches .top-bar-wrapper .full-length-line .intro-text {
+    margin-left: 13px;
+    /* width: 275px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: transparent;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: bold;
+}
+#matches .top-bar-wrapper .full-length-line .back-button {
+    user-select: none;
+    cursor: pointer;
+}
+
+
+#matches .top-bar-wrapper .title-wrapper {
+    /* text-transform: uppercase; */
+    min-width: 288px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#matches .top-bar-wrapper .league-name {
+    min-width: 91px;
+    font-size: 13px;
+    margin-right: 12px;
+}
+
+.match-list-wrapper {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.match-wrapper {
+    width: 430px;
+    height: 220px;
+    background-color: #151414;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 1px 1px 8px 5px #0E0E0D;
+    position: relative;
+    overflow: hidden;
+    margin: 25px;
+    background-size: cover;
+    background-position: center;
+    transition: scale 0.4s,box-shadow 0.4s;
+    user-select: none;
+}
+
+.match-wrapper:hover {
+    scale: 1.17;
+    box-shadow: 1px 1px 8px 5px yellow;
+    position: relative;
+}
+.match-wrapper .league-title {
+    color: white;
+    position: absolute;
+    z-index: 100;
+    width: 160px;
+    height: 17px;
+    line-height: 17px;
+    left: calc(50% - 80px);
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    background-color: #272727;
+    font-size: 11px;
+}
+.match-wrapper .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.9;
+}
+.match-wrapper .info-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.match-wrapper .info-wrapper .upper-layer {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.match-wrapper .info-wrapper .upper-layer .live-status {
+    width: 50px;
+    height: 18px;
+    border-radius: 25px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.match-wrapper .info-wrapper .upper-layer .live-status .dot-wrapper {
+    margin-top: 1px;
+    font-size: 7px;
+    margin-right: 6px;
+}
+.match-wrapper .info-wrapper .upper-layer .live-status .text-wrapper {
+    font-size: 11px;
+    letter-spacing: 0.03em;
+}
+
+.match-wrapper .info-wrapper .mid-layer {
+    width: 100%;
+    /* height: 80px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.match-wrapper .info-wrapper .mid-layer .team-wrapper,
+.match-wrapper .info-wrapper .mid-layer .date-time-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.match-wrapper .info-wrapper .mid-layer .team-wrapper {
+    width: 100px;
+}
+.match-wrapper .info-wrapper .mid-layer .team-wrapper .logo-wrapper {
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.match-wrapper .info-wrapper .mid-layer .team-wrapper .team-name-wrapper {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.match-wrapper .info-wrapper .mid-layer .date-time-wrapper .time-wrapper {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.match-wrapper .info-wrapper .mid-layer .date-time-wrapper .date-wrapper {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.match-wrapper .info-wrapper .bottom-layer {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.match-wrapper .info-wrapper .bottom-layer form {
+    width: 100%;
+}
+.match-wrapper .info-wrapper .bottom-layer .watch-button-wrapper {
+    width: 100%;
+    height: 35px;
+    border: 1px solid yellow;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.match-wrapper .info-wrapper .bottom-layer .watch-button-wrapper:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* media queries section ................................................................... */
+
+@media only screen and (max-width: 1370px) {
+    /* header {
+        height: 400px;
+    } */
+    .league-info-wrapper .league-logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 120px;
+    }
+    .league-info-wrapper .title {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .league-info-wrapper .sub-title {
+        font-size: 12px;
+        width: 600px;
+    }
+    #matches {
+        margin-top: 15px;
+    }
+    #matches .top-bar-wrapper {
+        height: 36px;
+        margin-bottom: 0;
+    }
+
+    #matches .top-bar-wrapper .title-wrapper {
+        font-size: 20px;
+        min-width: 230px;
+    }
+    #matches .top-bar-wrapper .league-name{
+        font-size: 12px;
+    }
+    .match-wrapper {
+        width: 380px;
+        height: 200px;
+    }
+    .match-wrapper .info-wrapper .mid-layer .team-wrapper .logo-wrapper {
+        width: 55px;
+        height: 55px;
+    }
+    .match-wrapper .info-wrapper .mid-layer .team-wrapper .team-name-wrapper {
+        font-size: 13px;
+    }
+    .match-wrapper:hover {
+        scale: 1.1;
+    }
+
+}
